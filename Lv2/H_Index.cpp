@@ -8,22 +8,20 @@ using namespace std;
 int solution(vector<int> citations) {
     int answer = 0;
 
-    sort(citations.begin(), citations.end());
+    sort(citations.begin(), citations.end(), greater<int>());
     
-    int count = 0;
-    for(int i = citations.size() - 1; i >= 0; i--){
-        count++;
-        if(citations[i] <= count){
-            answer = citations[i];
-            break;    
-        }
+    for(int i = 0; i < citations.size(); i++){
+        if(citations[i] > i)
+            answer++;
+        else
+            break;
     }
-    cout << answer;
-    return answer;
+    cout << answer++;
+    return answer++;
 }
 
 int main(){
-    vector<int> citations = { 3, 0, 6, 1, 5 };
+    vector<int> citations = { 0,1,5,7,10,13,14 };
     solution(citations);
     return 0;
 }

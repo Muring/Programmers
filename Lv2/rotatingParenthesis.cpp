@@ -31,6 +31,7 @@ int solution(string s) {
         s.push_back(temp);
     }
     cout << answer;
+    
     return answer;
 }
 

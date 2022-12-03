@@ -23,15 +23,16 @@ int solution(string s) {
                 else
                     stk.push(s[j]);
             }
-            if(stk.empty())
-                answer++;
         }
+        if(stk.empty())
+            answer++;
+
         char temp = s.front();
         s.erase(s.begin());
         s.push_back(temp);
     }
     cout << answer;
-    
+
     return answer;
 }
 

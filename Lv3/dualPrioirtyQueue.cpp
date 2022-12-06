@@ -8,7 +8,7 @@ vector<int> solution(vector<string> operations) {
     vector<int> answer;
     
 
-
+    int num;
 
     return answer;
 }

@@ -4,6 +4,10 @@
 
 using namespace std;
 
+priority_queue<int, vector<int>, greater <>> min_pq;
+priority_queue<int, vector<int>, less <>> max_pq;
+int pq_size;
+
 vector<int> solution(vector<string> operations) {
     vector<int> answer;
     

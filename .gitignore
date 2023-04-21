@@ -1,2 +1,2 @@
 *.exe
-!/Lv1/build/
+*.o

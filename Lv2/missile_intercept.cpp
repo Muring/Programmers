@@ -22,7 +22,6 @@ int solution(vector<vector<int>> targets)
             idx++;
         }
     }
-
     return answer;
 }
 
